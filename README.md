@@ -7,6 +7,15 @@
 
 ### 그림 자료
 
+#### 리모컨 + 도어락 제품 모습
+![제품](docs/product.png)
+
+#### 버튼으로 문 열기
+![버튼으로 열기](docs/scene_button.png)
+
+#### 음성으로 문 열고 닫기
+![음성으로 열기](docs/scene_voice.png)
+
 #### 배선도
 ![배선도](docs/wiring.png)
 
