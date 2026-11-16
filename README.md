@@ -20,6 +20,7 @@
 |---|---|
 | `arduino/shake_door_lock/shake_door_lock.ino` | ESP32 펌웨어 (BLE 서버 + 릴레이 제어) |
 | `docs/index.html` | 폰에서 여는 웹페이지 (흔들기 감지 + BLE 전송) |
+| `INSTALL.md` | **설치 가이드** (테스트 → 문 부착 → 배선 → 점검) |
 
 ## 준비물
 
