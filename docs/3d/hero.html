@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script></head><body>
+<script type="module">
+import * as THREE from 'three';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {makeRemote} from './common.js';
+const W=2000,H=1300;
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+r.setSize(W,H);r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.15;r.shadowMap.enabled=true;r.shadowMap.type=THREE.VSMShadowMap;
+document.body.appendChild(r.domElement);
+const scene=new THREE.Scene();
+const pm=new THREE.PMREMGenerator(r);scene.environment=pm.fromScene(new RoomEnvironment(),0.04).texture;scene.environmentIntensity=0.35;
+import('three/addons/lights/RectAreaLightUniformsLib.js').then(()=>{});
+const bgTex=(()=>{const c=document.createElement('canvas');c.width=1024;c.height=660;const x=c.getContext('2d');const g=x.createRadialGradient(512,250,40,512,330,700);g.addColorStop(0,'#4a505a');g.addColorStop(0.55,'#23262c');g.addColorStop(1,'#0c0d10');x.fillStyle=g;x.fillRect(0,0,1024,660);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;})();
+scene.background=new THREE.Color(0x15171b);scene.fog=new THREE.Fog(0x15171b,420,900);
+const groundMat=new THREE.MeshPhysicalMaterial({color:0x2e3238,roughness:0.55,clearcoat:0.25,clearcoatRoughness:0.5});
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(6000,6000),groundMat);
+ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
+const vign=new THREE.Mesh(new THREE.RingGeometry(260,1600,96),new THREE.MeshBasicMaterial({color:0x0c0d10,transparent:true,opacity:1}));
+vign.rotation.x=-Math.PI/2;vign.position.y=0.05;
+const key=new THREE.DirectionalLight(0xffffff,2.2);key.position.set(-160,340,180);key.castShadow=true;
+key.shadow.mapSize.set(4096,4096);key.shadow.camera.left=-900;key.shadow.camera.right=900;key.shadow.camera.top=900;key.shadow.camera.bottom=-900;key.shadow.camera.far=3000;key.shadow.radius=16;key.shadow.blurSamples=25;key.shadow.bias=-0.0004;scene.add(key);
+const rim=new THREE.SpotLight(0x9cc4ff,26000,0,0.45,0.9);rim.position.set(280,200,-280);rim.target.position.set(0,50,0);scene.add(rim,rim.target);
+const rim2=new THREE.SpotLight(0xffd8b0,9000,0,0.45,0.9);rim2.position.set(-300,120,-260);rim2.target.position.set(0,40,0);scene.add(rim2,rim2.target);
+const top=new THREE.SpotLight(0xffffff,30000,0,0.6,1);top.position.set(40,420,120);top.target.position.set(0,0,0);scene.add(top,top.target);
+// standing remote
+const a=makeRemote();a.position.set(-38,62.5+0.2,-30);a.rotation.y=0.38;scene.add(a);
+// lying remote
+const b=makeRemote();b.rotation.x=-Math.PI/2;const pb=new THREE.Group();pb.add(b);pb.rotation.y=0.12;pb.position.set(55,0.2,45);scene.add(pb);
+const cam=new THREE.PerspectiveCamera(30,W/H,1,3000);cam.position.set(150,165,370);cam.lookAt(12,42,0);
+const comp=new EffectComposer(r);comp.addPass(new RenderPass(scene,cam));
+comp.addPass(new UnrealBloomPass(new THREE.Vector2(W,H),0.5,0.4,0.85));comp.addPass(new OutputPass());
+comp.render();window.done=true;
+</script></body></html>

@@ -7,6 +7,11 @@
 
 ### 그림 자료
 
+#### 리모컨 3D 렌더링
+![리모컨 3D](docs/remote_3d.png)
+
+> 3D 장면 소스: `docs/3d/` (Three.js)
+
 #### 음성 + 버튼 리모컨 설계도
 ![리모컨 설계도](docs/remote_design.png)
 
