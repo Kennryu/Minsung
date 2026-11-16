@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="880" viewBox="0 0 1240 880" font-family="WenQuanYi Zen Hei, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#333"/></marker>
+    <pattern id="wood" width="40" height="12" patternUnits="userSpaceOnUse"><rect width="40" height="12" fill="#c8915a"/><path d="M0 6 Q10 3 20 6 T40 6" stroke="#b07a45" fill="none"/></pattern>
+  </defs>
+  <rect width="1240" height="880" fill="#f7f5f0"/>
+  <text x="30" y="38" font-size="24" font-weight="bold" fill="#222">문에 설치하는 방법 (서보가 안쪽 손잡이를 돌림)</text>
+
+  <!-- ========== Panel A ========== -->
+  <rect x="30" y="60" width="580" height="360" rx="12" fill="#fff" stroke="#ddd"/>
+  <text x="50" y="92" font-size="17" font-weight="bold" fill="#222">① 문 안쪽에서 본 모습</text>
+  <!-- locked -->
+  <g transform="translate(170,228)">
+    <rect x="-50" y="-95" width="100" height="190" rx="18" fill="#d4b04c" stroke="#9c7f2a" stroke-width="2"/>
+    <circle cx="0" cy="0" r="38" fill="#e3c769" stroke="#9c7f2a" stroke-width="2"/>
+    <rect x="-13" y="-48" width="26" height="96" rx="9" fill="#b8962f" stroke="#7d6420" stroke-width="2"/>
+    <g opacity="0.85"><rect x="-6" y="-70" width="12" height="70" rx="6" fill="#fff" stroke="#888"/><circle r="10" fill="#fff" stroke="#888"/><circle r="3" fill="#888"/></g>
+    <circle cx="0" cy="-118" r="9" fill="#e03131"/>
+    <text x="0" y="128" font-size="16" font-weight="bold" fill="#c0392b" text-anchor="middle">잠김 · 서보 0°</text>
+    <text x="0" y="150" font-size="12" fill="#666" text-anchor="middle">빨강 LED 켜짐</text>
+  </g>
+  <!-- arrow -->
+  <path d="M245 208 Q305 168 365 208" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="305" y="160" font-size="13" fill="#333" text-anchor="middle">비밀번호 + OK</text>
+  <path d="M365 268 Q305 308 245 268" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+  <text x="305" y="323" font-size="12" fill="#888" text-anchor="middle">5초 뒤 자동 잠김</text>
+  <!-- open -->
+  <g transform="translate(440,228)">
+    <rect x="-50" y="-95" width="100" height="190" rx="18" fill="#d4b04c" stroke="#9c7f2a" stroke-width="2"/>
+    <circle cx="0" cy="0" r="38" fill="#e3c769" stroke="#9c7f2a" stroke-width="2"/>
+    <rect x="-48" y="-13" width="96" height="26" rx="9" fill="#b8962f" stroke="#7d6420" stroke-width="2"/>
+    <g opacity="0.85"><rect x="0" y="-6" width="70" height="12" rx="6" fill="#fff" stroke="#888"/><circle r="10" fill="#fff" stroke="#888"/><circle r="3" fill="#888"/></g>
+    <circle cx="0" cy="-118" r="9" fill="#40c057"/>
+    <text x="0" y="128" font-size="16" font-weight="bold" fill="#2b8a3e" text-anchor="middle">열림 · 서보 90°</text>
+    <text x="0" y="150" font-size="12" fill="#666" text-anchor="middle">초록 LED 켜짐</text>
+  </g>
+  <text x="320" y="408" font-size="12" fill="#666" text-anchor="middle">흰 막대 = 서보 혼 · 문마다 도는 방향이 다르면 SERVO_LOCKED / SERVO_OPEN 값을 바꾸세요</text>
+
+  <!-- ========== Panel B: side view ========== -->
+  <rect x="630" y="60" width="580" height="360" rx="12" fill="#fff" stroke="#ddd"/>
+  <text x="650" y="92" font-size="17" font-weight="bold" fill="#222">② 옆에서 자른 모습 (단면)</text>
+  <text x="665" y="330" font-size="13" fill="#888" text-anchor="middle">문 밖</text>
+  <text x="1060" y="380" font-size="13" fill="#888" text-anchor="middle">문 안 →</text>
+  <!-- door -->
+  <rect x="700" y="140" width="60" height="240" fill="url(#wood)" stroke="#8a5a2b" stroke-width="2"/>
+  <!-- key cylinder & bolt -->
+  <rect x="682" y="215" width="18" height="60" rx="4" fill="#bbb" stroke="#777"/>
+  <rect x="700" y="230" width="60" height="30" fill="#999" stroke="#666"/>
+  <!-- thumb-turn plate and knob -->
+  <rect x="760" y="185" width="12" height="120" rx="3" fill="#d4b04c" stroke="#9c7f2a"/>
+  <rect x="772" y="226" width="30" height="38" rx="4" fill="#b8962f" stroke="#7d6420"/>
+  <!-- coupler cup -->
+  <path d="M795 212 H838 V278 H795 V268 H822 V222 H795 Z" fill="#f08c00" stroke="#b36200" stroke-width="1.5"/>
+  <!-- horn -->
+  <rect x="838" y="214" width="8" height="62" rx="3" fill="#fff" stroke="#888"/>
+  <rect x="846" y="240" width="8" height="10" fill="#ccc"/>
+  <!-- servo -->
+  <rect x="854" y="205" width="80" height="80" rx="4" fill="#1f4e9c" stroke="#123266" stroke-width="2"/>
+  <rect x="854" y="190" width="10" height="110" fill="#1f4e9c" stroke="#123266"/>
+  <path d="M934 260 C960 270 970 300 990 320" stroke="#f08c00" stroke-width="3" fill="none"/>
+  <path d="M934 266 C958 278 966 306 986 326" stroke="#d62828" stroke-width="3" fill="none"/>
+  <path d="M934 272 C956 286 962 312 982 332" stroke="#7b4a24" stroke-width="3" fill="none"/>
+  <!-- bracket -->
+  <path d="M760 160 H950 V330 H760" fill="none" stroke="#868e96" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="754" y="152" width="10" height="16" fill="#555"/><rect x="754" y="322" width="10" height="16" fill="#555"/>
+  <!-- labels -->
+  <g font-size="12" fill="#333">
+    <line x1="730" y1="230" x2="730" y2="132" stroke="#aaa"/><text x="670" y="126">데드볼트(잠금쇠)</text>
+    <line x1="787" y1="264" x2="787" y2="355" stroke="#aaa"/><text x="760" y="370">안쪽 손잡이</text>
+    <line x1="815" y1="212" x2="815" y2="130" stroke="#aaa"/><text x="790" y="126">연결 어댑터</text>
+    <line x1="894" y1="245" x2="1000" y2="200" stroke="#aaa"/><text x="1004" y="196">서보 모터</text>
+    <text x="1004" y="214" fill="#888">(MG996R 권장)</text>
+    <line x1="950" y1="160" x2="1000" y2="140" stroke="#aaa"/><text x="1004" y="138">고정 브래킷</text>
+    <text x="1004" y="156" fill="#888">(나사·양면테이프로 문에 고정)</text>
+    <text x="1000" y="345">→ 아두이노로</text>
+  </g>
+  <text x="920" y="408" font-size="12" fill="#666" text-anchor="middle">서보 축과 손잡이 축이 한 줄로 맞아야 부드럽게 돌아갑니다</text>
+
+  <!-- ========== Panel C: top view ========== -->
+  <rect x="30" y="440" width="1180" height="420" rx="12" fill="#fff" stroke="#ddd"/>
+  <text x="50" y="472" font-size="17" font-weight="bold" fill="#222">③ 위에서 내려다본 전체 배치</text>
+  <text x="620" y="500" font-size="15" fill="#555" text-anchor="middle">문 안쪽 (실내)</text>
+  <text x="620" y="845" font-size="15" fill="#555" text-anchor="middle">문 바깥쪽 (복도)</text>
+  <!-- walls -->
+  <rect x="60" y="640" width="140" height="60" fill="#adb5bd"/>
+  <rect x="1040" y="640" width="140" height="60" fill="#adb5bd"/>
+  <!-- door -->
+  <rect x="200" y="655" width="840" height="30" fill="url(#wood)" stroke="#8a5a2b" stroke-width="2"/>
+  <text x="400" y="675" font-size="13" fill="#fff" font-weight="bold">현관문</text>
+  <!-- hole -->
+  <line x1="880" y1="655" x2="880" y2="685" stroke="#333" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- outlet -->
+  <rect x="140" y="600" width="44" height="36" rx="4" fill="#fff" stroke="#666"/><circle cx="154" cy="618" r="3" fill="#333"/><circle cx="170" cy="618" r="3" fill="#333"/>
+  <text x="162" y="590" font-size="12" text-anchor="middle">콘센트</text>
+  <rect x="250" y="590" width="60" height="34" rx="4" fill="#333"/><text x="280" y="612" font-size="11" fill="#fff" text-anchor="middle">5V 2A</text>
+  <line x1="184" y1="618" x2="250" y2="607" stroke="#333" stroke-width="3"/>
+  <path d="M310 607 C360 607 380 570 420 570" stroke="#333" stroke-width="3" fill="none"/>
+  <!-- arduino box -->
+  <rect x="420" y="530" width="200" height="90" rx="8" fill="#e9ecef" stroke="#868e96" stroke-width="2"/>
+  <rect x="440" y="548" width="120" height="56" rx="4" fill="#0e7c9b"/>
+  <text x="500" y="581" font-size="12" fill="#fff" text-anchor="middle">Arduino</text>
+  <circle cx="585" cy="560" r="8" fill="#40c057"/><circle cx="585" cy="590" r="8" fill="#e03131"/>
+  <text x="520" y="522" font-size="12" text-anchor="middle">케이스 (LED·부저 포함)</text>
+  <!-- servo on lock -->
+  <rect x="930" y="600" width="70" height="40" rx="5" fill="#1f4e9c"/>
+  <rect x="950" y="640" width="30" height="15" fill="#d4b04c"/>
+  <text x="965" y="590" font-size="12" text-anchor="middle">서보 + 손잡이</text>
+  <path d="M620 575 C760 575 820 620 930 620" stroke="#f08c00" stroke-width="3" fill="none"/>
+  <text x="770" y="572" font-size="12" fill="#b36200">서보 선 (D9, 5V, GND)</text>
+  <!-- IR wire through door -->
+  <path d="M620 600 C720 600 860 610 880 655" stroke="#e8a400" stroke-width="3" fill="none"/>
+  <line x1="880" y1="685" x2="880" y2="700" stroke="#e8a400" stroke-width="3"/>
+  <rect x="860" y="700" width="40" height="22" rx="4" fill="#2a2a2a"/><circle cx="880" cy="714" r="6" fill="#111" stroke="#555"/>
+  <text x="910" y="718" font-size="12">IR 수신기</text>
+  <text x="680" y="640" font-size="12" fill="#a07400">작은 구멍으로 선을 밖으로</text>
+  <!-- remote + person -->
+  <g transform="translate(860,780)">
+    <rect x="-14" y="-10" width="28" height="56" rx="6" fill="#333"/><circle cy="0" r="4" fill="#e03131"/>
+  </g>
+  <path d="M880 765 Q872 750 880 735 M890 765 Q882 750 890 735" stroke="#e03131" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+  <text x="760" y="800" font-size="13" text-anchor="end">리모컨을 IR 수신기 쪽으로 누르기 (약 5m 이내)</text>
+  <text x="60" y="760" font-size="12" fill="#666">· 서보는 USB 대신 5V 2A 어댑터로 전원 공급 (힘이 부족하면 리셋됨)</text>
+  <text x="60" y="780" font-size="12" fill="#666">· IR 수신기는 햇빛이 직접 닿지 않는 곳에</text>
+  <text x="60" y="800" font-size="12" fill="#666">· 실제 현관문에는 기계식 열쇠를 꼭 함께 사용</text>
+</svg>

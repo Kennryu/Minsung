@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1000" viewBox="0 0 1240 1000" font-family="WenQuanYi Zen Hei, sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#555"/></marker></defs>
+<rect width="1240" height="1000" fill="#f7f5f0"/>
+<text x="30" y="40" font-size="24" font-weight="bold" fill="#222">동작 순서도</text>
+<rect x="480.0" y="63.0" width="280" height="64" rx="10" fill="#ffe3e3" stroke="#e03131" stroke-width="2"/>
+<text x="620" y="89" font-size="15" text-anchor="middle" fill="#222">전원 켜짐 → 문 잠금</text>
+<text x="620" y="111" font-size="15" text-anchor="middle" fill="#222">(빨강 LED 켜짐)</text>
+<polyline points="620,127 620,163" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="500.0" y="164.0" width="240" height="42" rx="10" fill="#e7f5ff" stroke="#1c7ed6" stroke-width="2"/>
+<text x="620" y="190" font-size="15" text-anchor="middle" fill="#222">리모컨 버튼 기다림</text>
+<polyline points="620,206 620,243" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M620 245.0 L730.0 290 L620 335.0 L510.0 290 Z" fill="#fff8e1" stroke="#e8a400" stroke-width="2"/>
+<text x="620" y="295" font-size="15" text-anchor="middle" font-weight="bold" fill="#222">입력 차단 중?</text>
+<polyline points="730,290 898,290" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="780" y="282" font-size="13" fill="#555" font-weight="bold">예</text>
+<rect x="910.0" y="258.0" width="220" height="64" rx="10" fill="#fff" stroke="#888" stroke-width="2"/>
+<text x="1020" y="284" font-size="15" text-anchor="middle" fill="#222">삐— 하고 무시</text>
+<text x="1020" y="306" font-size="15" text-anchor="middle" fill="#222">(30초 지나면 풀림)</text>
+<polyline points="620,335 620,373" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="630" y="360" font-size="13" fill="#555" font-weight="bold">아니오</text>
+<path d="M620 375.0 L730.0 420 L620 465.0 L510.0 420 Z" fill="#fff8e1" stroke="#e8a400" stroke-width="2"/>
+<text x="620" y="425" font-size="15" text-anchor="middle" font-weight="bold" fill="#222">어떤 버튼?</text>
+<polyline points="510,420 200,420 200,513" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="330" y="412" font-size="13" fill="#555" font-weight="bold">숫자</text>
+<rect x="85.0" y="513.0" width="230" height="64" rx="10" fill="#fff" stroke="#888" stroke-width="2"/>
+<text x="200" y="539" font-size="15" text-anchor="middle" fill="#222">숫자를 입력에 추가</text>
+<text x="200" y="561" font-size="15" text-anchor="middle" fill="#222">(시리얼에 * 표시)</text>
+<polyline points="560,450 460,450 460,523" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="470" y="443" font-size="13" fill="#555" font-weight="bold">CLR</text>
+<rect x="375.0" y="524.0" width="170" height="42" rx="10" fill="#fff" stroke="#888" stroke-width="2"/>
+<text x="460" y="550" font-size="15" text-anchor="middle" fill="#222">입력 지우기</text>
+<polyline points="680,450 820,450 820,503" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="740" y="443" font-size="13" fill="#555" font-weight="bold">OK</text>
+<path d="M820 505.0 L935.0 550 L820 595.0 L705.0 550 Z" fill="#fff8e1" stroke="#e8a400" stroke-width="2"/>
+<text x="820" y="555" font-size="15" text-anchor="middle" font-weight="bold" fill="#222">문이 열려 있나?</text>
+<polyline points="935,550 1013,550" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="960" y="542" font-size="13" fill="#555" font-weight="bold">예</text>
+<rect x="1015.0" y="529.0" width="190" height="42" rx="10" fill="#ffe3e3" stroke="#e03131" stroke-width="2"/>
+<text x="1110" y="555" font-size="15" text-anchor="middle" fill="#222">바로 잠금</text>
+<polyline points="820,595 820,643" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="830" y="625" font-size="13" fill="#555" font-weight="bold">아니오</text>
+<path d="M820 645.0 L935.0 690 L820 735.0 L705.0 690 Z" fill="#fff8e1" stroke="#e8a400" stroke-width="2"/>
+<text x="820" y="695" font-size="15" text-anchor="middle" font-weight="bold" fill="#222">비밀번호 맞음?</text>
+<polyline points="935,690 1013,690" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="960" y="682" font-size="13" fill="#555" font-weight="bold">예</text>
+<rect x="1015.0" y="658.0" width="190" height="64" rx="10" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+<text x="1110" y="684" font-size="15" text-anchor="middle" fill="#222">문 열림 (90°)</text>
+<text x="1110" y="706" font-size="15" text-anchor="middle" fill="#222">초록 LED · 삐빅</text>
+<polyline points="1110,722 1110,778" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="1015.0" y="768.0" width="190" height="64" rx="10" fill="#ffe3e3" stroke="#e03131" stroke-width="2"/>
+<text x="1110" y="794" font-size="15" text-anchor="middle" fill="#222">5초 뒤</text>
+<text x="1110" y="816" font-size="15" text-anchor="middle" fill="#222">자동 잠금</text>
+<polyline points="820,735 820,773" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="830" y="756" font-size="13" fill="#555" font-weight="bold">아니오</text>
+<rect x="705.0" y="763.0" width="230" height="64" rx="10" fill="#fff" stroke="#888" stroke-width="2"/>
+<text x="820" y="789" font-size="15" text-anchor="middle" fill="#222">실패 횟수 +1 · 삐삐</text>
+<text x="820" y="811" font-size="15" text-anchor="middle" fill="#222">입력 지우기</text>
+<polyline points="820,827 820,863" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M820 865.0 L925.0 905 L820 945.0 L715.0 905 Z" fill="#fff8e1" stroke="#e8a400" stroke-width="2"/>
+<text x="820" y="910" font-size="15" text-anchor="middle" font-weight="bold" fill="#222">3번 틀렸나?</text>
+<polyline points="925,905 1013,905" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="955" y="897" font-size="13" fill="#555" font-weight="bold">예</text>
+<rect x="1015.0" y="873.0" width="190" height="64" rx="10" fill="#fff3bf" stroke="#e8a400" stroke-width="2"/>
+<text x="1110" y="899" font-size="15" text-anchor="middle" fill="#222">30초 동안</text>
+<text x="1110" y="921" font-size="15" text-anchor="middle" fill="#222">입력 차단</text>
+<polyline points="715,905 560,905" fill="none" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
+<text x="620" y="897" font-size="13" fill="#555" font-weight="bold">아니오</text>
+<text x="430" y="910" font-size="14" fill="#1c7ed6" text-anchor="middle">→ 다시 버튼 기다림</text>
+<rect x="40" y="640" width="380" height="150" rx="10" fill="#fff" stroke="#ddd"/>
+<text x="60" y="672" font-size="16" fill="#333" font-weight="bold">알아두기</text>
+<text x="60" y="698" font-size="14" fill="#333" >· 비밀번호 기본값: 1234 (최대 8자리)</text>
+<text x="60" y="724" font-size="14" fill="#333" >· 입력 중 10초 동안 멈추면 자동 초기화</text>
+<text x="60" y="750" font-size="14" fill="#333" >· 버튼을 꾹 누를 때 반복 신호는 무시</text>
+<text x="60" y="776" font-size="14" fill="#333" >· 모든 동작 후에는 다시 버튼을 기다림</text>
+</svg>
