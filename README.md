@@ -7,6 +7,9 @@
 
 ### 그림 자료
 
+#### 음성 + 버튼 리모컨 설계도
+![리모컨 설계도](docs/remote_design.png)
+
 #### 리모컨 + 도어락 제품 모습
 ![제품](docs/product.png)
 

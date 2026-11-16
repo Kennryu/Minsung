@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1230" viewBox="0 0 1600 1230" font-family="WenQuanYi Zen Hei, sans-serif">
+<defs>
+<linearGradient id="body" x1="0" x2="1"><stop offset="0" stop-color="#16171c"/><stop offset="0.12" stop-color="#2c2f37"/><stop offset="0.4" stop-color="#383c46"/><stop offset="0.8" stop-color="#2a2d34"/><stop offset="1" stop-color="#121317"/></linearGradient>
+<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3e48"/><stop offset="1" stop-color="#262930"/></linearGradient>
+<linearGradient id="key" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4e58"/><stop offset="1" stop-color="#26282e"/></linearGradient>
+<radialGradient id="keyR" cx="0.45" cy="0.35" r="0.7"><stop offset="0" stop-color="#4f535e"/><stop offset="1" stop-color="#222429"/></radialGradient>
+<radialGradient id="led" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#d3f9d8"/><stop offset="0.4" stop-color="#51cf66"/><stop offset="1" stop-color="#2b8a3e" stop-opacity="0"/></radialGradient>
+<linearGradient id="side" x1="0" x2="1"><stop offset="0" stop-color="#3a3e48"/><stop offset="0.45" stop-color="#2c2f37"/><stop offset="0.46" stop-color="#15161a"/><stop offset="0.48" stop-color="#2a2d34"/><stop offset="1" stop-color="#1a1b20"/></linearGradient>
+<linearGradient id="lipo" x1="0" x2="1"><stop offset="0" stop-color="#ced4da"/><stop offset="0.5" stop-color="#f1f3f5"/><stop offset="1" stop-color="#adb5bd"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="6" dy="14" stdDeviation="12" flood-opacity="0.35"/></filter>
+<filter id="ks" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-opacity="0.6"/></filter>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+<marker id="d1" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9" fill="none" stroke="#666" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1600" height="1230" fill="#eef0f3"/>
+<text x="40" y="54" font-size="30" font-weight="bold" fill="#1f2328">음성 + 버튼 리모컨 설계도</text>
+<text x="40" y="86" font-size="16" fill="#5c636b">시중에서 살 수 있는 부품만으로 만들 수 있는 크기 · 54 × 125 × 22 mm (스마트폰보다 작고 자동차 키보다 조금 큼)</text>
+<text x="218" y="130" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">앞면</text>
+<g filter="url(#sh)"><rect x="110" y="150" width="216" height="500" rx="60" fill="url(#body)"/></g>
+<rect x="117" y="157" width="202" height="486" rx="53" fill="url(#face)"/>
+<path d="M124 230 Q122 180 170 162" stroke="#fff" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+<line x1="121" y1="250" x2="121" y2="550" stroke="#fff" stroke-opacity="0.07" stroke-width="4"/>
+<circle cx="218.0" cy="194" r="14" fill="url(#led)" filter="url(#glow)" opacity="0.9"/><circle cx="218.0" cy="194" r="5" fill="#b2f2bb" stroke="#1b1c20" stroke-width="1.5"/>
+<circle cx="182.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="182.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="194.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="194.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="206.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="206.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="218.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="218.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="230.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="230.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="242.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="242.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="254.0" cy="234" r="2.6" fill="#0d0e11"/><circle cx="254.0" cy="234.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="188.0" cy="245" r="2.6" fill="#0d0e11"/><circle cx="188.0" cy="245.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="200.0" cy="245" r="2.6" fill="#0d0e11"/><circle cx="200.0" cy="245.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="212.0" cy="245" r="2.6" fill="#0d0e11"/><circle cx="212.0" cy="245.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="224.0" cy="245" r="2.6" fill="#0d0e11"/><circle cx="224.0" cy="245.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="236.0" cy="245" r="2.6" fill="#0d0e11"/><circle cx="236.0" cy="245.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="248.0" cy="245" r="2.6" fill="#0d0e11"/><circle cx="248.0" cy="245.8" r="2.6" fill="none" stroke="#fff" stroke-opacity="0.08"/>
+<circle cx="218.0" cy="342" r="58.0" fill="#16171b"/>
+<circle cx="218.0" cy="342" r="54.4" fill="none" stroke="#4dabf7" stroke-width="3" opacity="0.9"/><circle cx="218.0" cy="342" r="54.4" fill="none" stroke="#74c0fc" stroke-width="8" opacity="0.25" filter="url(#glow)"/>
+<g filter="url(#ks)"><circle cx="218.0" cy="342" r="49.6" fill="url(#keyR)"/></g>
+<ellipse cx="210.0" cy="318" rx="26" ry="10" fill="#fff" opacity="0.07"/>
+<rect x="208.1" y="317.6" width="19.8" height="33.0" rx="9.9" fill="#74c0fc"/><path d="M200.4 337.4 A17.6 17.6 0 0 0 235.6 337.4" fill="none" stroke="#74c0fc" stroke-width="4.4"/><line x1="218.0" y1="355.0" x2="218.0" y2="366.0" stroke="#74c0fc" stroke-width="4.4"/>
+<rect x="145.0" y="423.0" width="146" height="78" rx="37" fill="#16171b"/><g filter="url(#ks)"><rect x="150.0" y="428.0" width="136" height="68" rx="32" fill="url(#key)"/></g><rect x="160.0" y="432.0" width="116" height="10" rx="5" fill="#fff" opacity="0.07"/><path d="M180.6 462.1 V448.8 A11.399999999999999 11.399999999999999 0 0 1 203.4 443.1" fill="none" stroke="#51cf66" stroke-width="4.56" stroke-linecap="round"/><rect x="175.85" y="460.2" width="32.3" height="24.7" rx="4.75" fill="#51cf66"/><text x="238.0" y="471" font-size="24" font-weight="bold" fill="#dee2e6" text-anchor="middle">열림</text>
+<rect x="145.0" y="511.0" width="146" height="78" rx="37" fill="#16171b"/><g filter="url(#ks)"><rect x="150.0" y="516.0" width="136" height="68" rx="32" fill="url(#key)"/></g><rect x="160.0" y="520.0" width="116" height="10" rx="5" fill="#fff" opacity="0.07"/><path d="M180.6 550.1 V536.8 A11.399999999999999 11.399999999999999 0 0 1 203.4 536.8 V550.1" fill="none" stroke="#ff6b6b" stroke-width="4.56" stroke-linecap="round"/><rect x="175.85" y="548.2" width="32.3" height="24.7" rx="4.75" fill="#ff6b6b"/><text x="238.0" y="559" font-size="24" font-weight="bold" fill="#dee2e6" text-anchor="middle">잠금</text>
+<text x="218.0" y="618" font-size="11" fill="#5f646e" text-anchor="middle" letter-spacing="3">SMART DOOR KEY</text>
+<line x1="110" y1="680" x2="326" y2="680" stroke="#666" stroke-width="1.3" marker-start="url(#d1)" marker-end="url(#d1)"/><line x1="110" y1="662" x2="110" y2="688" stroke="#999"/><line x1="326" y1="662" x2="326" y2="688" stroke="#999"/>
+<text x="218.0" y="702" font-size="15" fill="#444" text-anchor="middle">54 mm</text>
+<line x1="356" y1="150" x2="356" y2="650" stroke="#666" stroke-width="1.3" marker-start="url(#d1)" marker-end="url(#d1)"/>
+<text x="368" y="400.0" font-size="15" fill="#444" transform="rotate(90 368 400.0)" text-anchor="middle">125 mm</text>
+<text x="560.0" y="130" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">옆면</text>
+<g filter="url(#sh)">
+<rect x="507" y="292.4" width="14" height="99.2" rx="6" fill="#33363e"/>
+<rect x="508" y="428.0" width="12" height="68" rx="6" fill="#33363e"/>
+<rect x="508" y="516.0" width="12" height="68" rx="6" fill="#33363e"/>
+<rect x="516" y="150" width="88" height="500" rx="34" fill="url(#side)"/></g>
+<line x1="522" y1="190" x2="522" y2="610" stroke="#fff" stroke-opacity="0.12" stroke-width="3"/>
+<ellipse cx="577.6" cy="628" rx="9" ry="6" fill="#0d0e11"/>
+<rect x="564.4" y="270" width="18" height="34" rx="4" fill="#0d0e11"/><rect x="567.4" y="274" width="12" height="13" rx="2" fill="#868e96"/>
+<g font-size="13" fill="#444"><line x1="582.4" y1="286" x2="644" y2="286" stroke="#999"/><text x="648" y="291">전원 스위치</text><line x1="586.6" y1="628" x2="644" y2="628" stroke="#999"/><text x="648" y="633">줄 고리</text><line x1="507" y1="342" x2="486" y2="280" stroke="#999"/><text x="482" y="276" text-anchor="end">버튼 2mm 돌출</text></g>
+<line x1="516" y1="680" x2="604" y2="680" stroke="#666" stroke-width="1.3" marker-start="url(#d1)" marker-end="url(#d1)"/><text x="560.0" y="702" font-size="15" fill="#444" text-anchor="middle">22 mm</text>
+<text x="560" y="736" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">아래쪽 끝</text>
+<rect x="452" y="750" width="216" height="88" rx="40" fill="url(#body)" filter="url(#sh)"/>
+<line x1="472" y1="790" x2="648" y2="790" stroke="#0d0e11" stroke-width="2"/>
+<rect x="542" y="782" width="36" height="14" rx="7" fill="#0d0e11" stroke="#555"/><rect x="549" y="787" width="22" height="4" rx="2" fill="#adb5bd"/>
+<circle cx="612" cy="794" r="3" fill="#ff6b6b"/>
+<text x="560" y="865" font-size="13" fill="#444" text-anchor="middle">USB-C 충전 · 충전 표시등(빨강→초록)</text>
+<text x="1110" y="130" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">분해도 (안에 들어가는 부품)</text>
+<g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,146)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#1b1c21"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,146)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#1b1c21"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,144)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#1b1c21"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,142)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#1b1c21"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,140)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#363a43"/><circle cx="27" cy="11" r="2" fill="#0d0e11"/><circle cx="18" cy="21" r="0.8" fill="#0d0e11"/><circle cx="21" cy="21" r="0.8" fill="#0d0e11"/><circle cx="24" cy="21" r="0.8" fill="#0d0e11"/><circle cx="27" cy="21" r="0.8" fill="#0d0e11"/><circle cx="30" cy="21" r="0.8" fill="#0d0e11"/><circle cx="33" cy="21" r="0.8" fill="#0d0e11"/><circle cx="36" cy="21" r="0.8" fill="#0d0e11"/><circle cx="27" cy="48" r="13.8" fill="#0d0e11"/><rect x="9.5" y="69" width="35" height="18" rx="8.5" fill="#0d0e11"/><rect x="9.5" y="91" width="35" height="18" rx="8.5" fill="#0d0e11"/><rect x="2" y="2" width="50" height="121" rx="13" fill="none" stroke="#fff" stroke-opacity="0.08"/></g>
+<circle cx="1078.5" cy="217.7" r="3.5" fill="#e8590c"/><line x1="1078.5" y1="217.7" x2="1250" y2="217.7" stroke="#e8590c" stroke-width="1.2"/>
+<text x="1258" y="214.7" font-size="16" font-weight="bold" fill="#222">① 윗판 케이스</text><text x="1258" y="234.7" font-size="12.5" fill="#555">3D 프린팅 (PETG, 무광 검정)</text>
+<g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,270)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#4a4e56"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,270)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#4a4e56"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,268)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#6c717a"/><circle cx="27" cy="48" r="12.4" fill="#4a4e58"/><circle cx="27" cy="48" r="13.4" fill="none" stroke="#4dabf7" stroke-width="0.8"/><rect x="10" y="69.5" width="34" height="17" rx="8" fill="#4a4e58"/><rect x="10" y="91.5" width="34" height="17" rx="8" fill="#4a4e58"/><circle cx="27" cy="11" r="1.6" fill="#d3f9d8" opacity="0.8"/></g>
+<circle cx="1078.5" cy="345.7" r="3.5" fill="#e8590c"/><line x1="1078.5" y1="345.7" x2="1250" y2="345.7" stroke="#e8590c" stroke-width="1.2"/>
+<text x="1258" y="342.7" font-size="16" font-weight="bold" fill="#222">② 실리콘 버튼 패드</text><text x="1258" y="362.7" font-size="12.5" fill="#555">눌리는 고무 버튼 3개 + 빛 통로</text>
+<g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,395)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#134a2c"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,395)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#134a2c"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,393)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#134a2c"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,392)"><rect x="3" y="3" width="48" height="119" rx="13" fill="#1f6f43"/><rect x="24" y="45" width="6" height="6" fill="#222"/><circle cx="27" cy="48" r="1.7" fill="#555"/><rect x="24" y="75" width="6" height="6" fill="#222"/><circle cx="27" cy="78" r="1.7" fill="#555"/><rect x="24" y="97" width="6" height="6" fill="#222"/><circle cx="27" cy="100" r="1.7" fill="#555"/><rect x="25.8" y="9.8" width="2.4" height="2.4" fill="#fff" stroke="#51cf66" stroke-width="0.4"/><rect x="3" y="58" width="18" height="22.5" rx="1" fill="#111"/><rect x="5" y="60" width="11" height="11" rx="0.6" fill="#b0b5bb"/><path d="M4 76 h3 v3 h3 v-3 h3 v3 h3 v-3 h3" fill="none" stroke="#c9a227" stroke-width="0.7"/><rect x="36" y="60" width="2" height="1" fill="#c9a227"/><rect x="40" y="60" width="2" height="1" fill="#c9a227"/><rect x="44" y="60" width="2" height="1" fill="#c9a227"/><rect x="36" y="64" width="2" height="1" fill="#c9a227"/><rect x="40" y="64" width="2" height="1" fill="#c9a227"/><rect x="44" y="64" width="2" height="1" fill="#c9a227"/><rect x="36" y="68" width="2" height="1" fill="#c9a227"/><rect x="40" y="68" width="2" height="1" fill="#c9a227"/><rect x="44" y="68" width="2" height="1" fill="#c9a227"/><rect x="40" y="112" width="8" height="5" fill="#f1f3f5"/><rect x="5" y="112" width="10" height="6" rx="0.5" fill="#222"/><circle cx="3" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="9" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="15" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="21" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="27" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="33" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="39" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="45" cy="3.5" r="0.8" fill="#c9a227"/><circle cx="51" cy="3.5" r="0.8" fill="#c9a227"/></g>
+<circle cx="1078.5" cy="469.7" r="3.5" fill="#e8590c"/><line x1="1078.5" y1="469.7" x2="1250" y2="469.7" stroke="#e8590c" stroke-width="1.2"/>
+<text x="1258" y="466.7" font-size="16" font-weight="bold" fill="#222">③ 메인 기판</text><text x="1258" y="486.7" font-size="12.5" fill="#555">ESP32-C3 SuperMini (블루투스) + 버튼 스위치 3개 + LED</text>
+<g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,520)"><rect x="2.5" y="6" width="49" height="32" rx="2" fill="#16181d"/><rect x="18" y="14" width="12" height="12" fill="#333" stroke="#777" stroke-width="0.3"/><circle cx="9" cy="14" r="3" fill="#adb5bd"/><circle cx="9" cy="14" r="1.2" fill="#222"/><circle cx="44" cy="14" r="3" fill="#adb5bd"/><circle cx="44" cy="14" r="1.2" fill="#222"/><rect x="34" y="28" width="12" height="5" fill="#f1f3f5"/><rect x="6" y="28" width="9" height="5" fill="#e9ecef"/><circle cx="27" cy="60" r="10" fill="#212529" stroke="#868e96" stroke-width="0.8"/><circle cx="27" cy="60" r="5" fill="#495057"/></g>
+<circle cx="1078.5" cy="597.7" r="3.5" fill="#e8590c"/><line x1="1078.5" y1="597.7" x2="1250" y2="597.7" stroke="#e8590c" stroke-width="1.2"/>
+<text x="1258" y="594.7" font-size="16" font-weight="bold" fill="#222">④ 음성 인식 모듈 + 스피커</text><text x="1258" y="614.7" font-size="12.5" fill="#555">DFRobot DF2301Q · 마이크 2개 · 소형 스피커</text>
+<g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,640)"><rect x="12" y="50" width="30" height="40" rx="2" fill="#dee2e6" stroke="#adb5bd" stroke-width="0.6"/><rect x="14" y="52" width="26" height="36" rx="1.5" fill="#f8f9fa" opacity="0.6"/><rect x="18" y="64" width="18" height="10" fill="#4dabf7"/><path d="M24 50 v-6 M30 50 v-6" stroke="#e03131" stroke-width="0.8"/><path d="M30 50 v-6" stroke="#111" stroke-width="0.8"/><rect x="18.5" y="96" width="17" height="26" rx="1" fill="#1864ab"/><rect x="23" y="118" width="8" height="5" rx="1.5" fill="#ced4da"/><rect x="22" y="102" width="6" height="6" fill="#222"/><rect x="46" y="20" width="5" height="9" rx="0.8" fill="#222"/><rect x="47" y="22" width="3" height="3" fill="#adb5bd"/></g>
+<circle cx="1078.5" cy="717.7" r="3.5" fill="#e8590c"/><line x1="1078.5" y1="717.7" x2="1250" y2="717.7" stroke="#e8590c" stroke-width="1.2"/>
+<text x="1258" y="714.7" font-size="16" font-weight="bold" fill="#222">⑤ 배터리 + 충전 모듈</text><text x="1258" y="734.7" font-size="12.5" fill="#555">3.7V 500mAh 리튬 배터리 · TP4056 USB-C 충전</text>
+<g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,773)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#16171b"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,773)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#16171b"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,771)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#16171b"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,769)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#16171b"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,767)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#16171b"/></g><g transform="matrix(1.6021,0.925,-1.6021,0.925,1040,765)"><rect x="0" y="0" width="54" height="125" rx="15" fill="#30333b"/><rect x="3" y="3" width="48" height="119" rx="12" fill="#23252b"/><circle cx="7" cy="7" r="2" fill="#0d0e11" stroke="#555" stroke-width="0.4"/><circle cx="47" cy="7" r="2" fill="#0d0e11" stroke="#555" stroke-width="0.4"/><circle cx="7" cy="118" r="2" fill="#0d0e11" stroke="#555" stroke-width="0.4"/><circle cx="47" cy="118" r="2" fill="#0d0e11" stroke="#555" stroke-width="0.4"/><rect x="22.5" y="121" width="9" height="4" fill="#0d0e11"/><circle cx="40" cy="118" r="2" fill="#0d0e11"/></g>
+<circle cx="1078.5" cy="842.7" r="3.5" fill="#e8590c"/><line x1="1078.5" y1="842.7" x2="1250" y2="842.7" stroke="#e8590c" stroke-width="1.2"/>
+<text x="1258" y="839.7" font-size="16" font-weight="bold" fill="#222">⑥ 아랫판 케이스</text><text x="1258" y="859.7" font-size="12.5" fill="#555">나사 4개로 조립 · USB-C 구멍</text>
+<line x1="1016.0" y1="153.9" x2="1016.0" y2="778.9" stroke="#999" stroke-dasharray="4 5" stroke-width="1"/>
+<line x1="950.3" y1="291.7" x2="950.3" y2="916.7" stroke="#999" stroke-dasharray="4 5" stroke-width="1"/>
+<rect x="40" y="975" width="1520" height="230" rx="12" fill="#fff" stroke="#dee2e6"/>
+<text x="64" y="1009" font-size="18" font-weight="bold" fill="#222">부품 목록 (모두 국내 온라인 쇼핑몰에서 구매 가능 · 가격은 대략)</text>
+<text x="64" y="1041" font-size="13" fill="#868e96" font-weight="bold">부품</text><text x="400" y="1041" font-size="13" fill="#868e96" font-weight="bold">크기</text><text x="620" y="1041" font-size="13" fill="#868e96" font-weight="bold">하는 일</text><text x="1440" y="1041" font-size="13" fill="#868e96" font-weight="bold">가격</text>
+<line x1="64" y1="1051" x2="1536" y2="1051" stroke="#e9ecef"/>
+<text x="64" y="1075" font-size="14" fill="#333">ESP32-C3 SuperMini</text>
+<text x="400" y="1075" font-size="14" fill="#333">22.5 × 18 mm</text>
+<text x="620" y="1075" font-size="14" fill="#333">블루투스로 도어락에 암호화된 열림·잠금 신호 보내기</text>
+<text x="1440" y="1075" font-size="14" fill="#333">약 5,000원</text>
+<text x="64" y="1099" font-size="14" fill="#333">DFRobot DF2301Q 음성 모듈</text>
+<text x="400" y="1099" font-size="14" fill="#333">49 × 32 mm</text>
+<text x="620" y="1099" font-size="14" fill="#333">인터넷 없이 음성 인식 · "문 열어" 같은 한국어 명령을 직접 녹음해서 학습</text>
+<text x="1440" y="1099" font-size="14" fill="#333">약 20,000원</text>
+<text x="64" y="1123" font-size="14" fill="#333">리튬 배터리 503040 + TP4056 충전 모듈</text>
+<text x="400" y="1123" font-size="14" fill="#333">30 × 40 mm / 26 × 17 mm</text>
+<text x="620" y="1123" font-size="14" fill="#333">3.7V 500mAh 전원 · USB-C로 충전</text>
+<text x="1440" y="1123" font-size="14" fill="#333">약 7,000원</text>
+<text x="64" y="1147" font-size="14" fill="#333">택트 스위치 3개 · 실리콘 패드 · 스위치 · LED</text>
+<text x="400" y="1147" font-size="14" fill="#333">6 × 6 mm</text>
+<text x="620" y="1147" font-size="14" fill="#333">버튼 입력과 상태 표시</text>
+<text x="1440" y="1147" font-size="14" fill="#333">약 3,000원</text>
+<text x="64" y="1171" font-size="14" fill="#333">3D 프린팅 케이스 (윗판 + 아랫판)</text>
+<text x="400" y="1171" font-size="14" fill="#333">54 × 125 × 22 mm</text>
+<text x="620" y="1171" font-size="14" fill="#333">PETG 출력 후 나사 4개로 조립</text>
+<text x="1440" y="1171" font-size="14" fill="#333">약 5,000원</text>
+<text x="1536" y="1193" font-size="14" font-weight="bold" fill="#e8590c" text-anchor="end">합계 약 40,000원</text>
+</svg>
